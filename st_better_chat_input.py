@@ -4,7 +4,18 @@ from typing import Literal, Sequence
 from time import sleep
 
 def st_better_chat_input(orientation: Literal["left", "right"] = "left", borders: bool | Sequence[bool] = False, additional_container: bool = False) -> Sequence[DeltaGenerator]:
+    """
+    Creates a customizable chat input layout for Streamlit apps.
 
+    Args:
+        orientation (Literal["left", "right"], optional): Determines the position of the input field relative to buttons. Defaults to "left".
+        borders (bool | Sequence[bool], optional): Specifies border visibility for different containers. Can be a single boolean or a list/tuple of four booleans. Defaults to False.
+        additional_container (bool, optional): Adds an extra container above the input and buttons. Defaults to False.
+
+    Returns:
+        Sequence[DeltaGenerator]: A tuple containing the buttons container, input container, and optionally the additional container.
+    """
+    
     # Validate `orientation`
     if orientation not in {"left", "right"}:
         raise ValueError("Argument 'orientation' must be either 'left' or 'right'.")
