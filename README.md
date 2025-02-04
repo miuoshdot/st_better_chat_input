@@ -22,9 +22,9 @@ You can use `st_better_chat_input` in two ways:
 
 ### Option 1: Copy the function
 
-Simply copy the `st_better_chat_input` function from the source code and paste it into your Streamlit application.
+Simply copy the `st_better_chat_input()` function from the source code and paste it into your Streamlit application.
 
-### Option 2: Import from a File
+### Option 2: Import from a file
 
 If you prefer to keep the function in a separate file, download the `st_better_chat_input.py` script, place it in your project directory, and import it as follows:
 
