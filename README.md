@@ -101,7 +101,7 @@ Due to the way this solution works, it may not be compatible with newer or older
 
 While `st_better_chat_input` improves layout flexibility, some potential issues may arise:
 
-- **Rendering Errors**: The first time the app loads, the dynamic layout may be miscalculated, causing elements to overlap (`sleep(0.5)` on the first run tries to prevent this but does not always work). If this happens, a full page reload (not just a rerun) usually resolves the issue.
+- **Rendering Errors**: The first time the app loads, the dynamic layout may be miscalculated, causing elements to overlap or have incorrect spacing (`sleep(0.5)` on the first run tries to prevent this but does not always work). If this happens, a full page reload (not just a rerun) usually resolves the issue.
 
 ![](assets/image7.png)
 
